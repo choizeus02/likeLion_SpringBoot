@@ -1,12 +1,13 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.0.6'
-	id 'io.spring.dependency-management' version '1.1.0'
-}
+	id 'org.springframework.boot' version '2.7.11'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+} // dependencies의 버전관리 등등
 
-group = 'com.example'
+group = 'dev.choizeus'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '17'   //gradle의 장점은 단계적인 빌드. 즉 특정부분까지 빌드가 되면 완료된 부분은 다시 빌드할 필요 없음.
+// 이러한 특성 때문에 초기 단계에는 maven보다 좀 느림
 
 repositories {
 	mavenCentral()
